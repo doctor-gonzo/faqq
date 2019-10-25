@@ -13,6 +13,7 @@ category: statement
 - The USA[^USA], China[^CHINA], EU[^EU] and other nation states are investing heavily into quantum computing. 
 - Tech giants such as Google[^GOOGLE], IBM[^IBM], Intel[^INTEL], Rigetti[^RIGETTI] and Microsoft[^MICROSOFT] are already competing for market share.
 - Not all research is public[^PRIVATE]
+- Breakthroughs in related scientific fields (like material science) occur frequently, and could drastically shorten the timeline for a powerful universal QC [^BREAKTHRU]
 
 As a byproduct of this global technilogical arms race, quantum computers powerful enough to break modern cryptography are expected to exist within 10-20 years, if not sooner.
 
@@ -104,5 +105,10 @@ As a byproduct of this global technilogical arms race, quantum computers powerfu
 
 	- [In 2014 documents leaked by Edward Snowden confirm the Penetrating Hard Targets project, by which the National Security Agency seeks to develop a quantum computing capability for cryptography purposes.](http://www.kurzweilai.net/nsa-seeks-to-develop-quantum-computer-to-crack-nearly-every-kind-of-encryption)
 	- [NSA seeks to build quantum computer that could crack most types of encryption](https://www.washingtonpost.com/world/national-security/nsa-seeks-to-build-quantum-computer-that-could-crack-most-types-of-encryption/2014/01/02/8fff297e-7195-11e3-8def-a33011492df2_story.html?noredirect=on&utm_term=.51c3b147ace4)
+	
+[^BREAKTHRU]: Scientific developments in related fields could drastically impact the Quantum Computing timeline
+
+	- ["A potentially useful material for building quantum computers has been unearthed at the National Institute of Standards and Technology (NIST), whose scientists have found a superconductor that could sidestep one of the primary obstacles standing in the way of effective quantum logic circuits."](https://www.sciencedaily.com/releases/2019/08/190815140843.htm)
+
 
 *[NISQ]: Noisy Intermediate-Scale Quantum
