@@ -7,17 +7,17 @@ category: 'statement'
 
 - A powerful quantum computer can reverse Bitcoin public keys into private keys in a matter of minutes[^QUANTUMATTACK]
 - 36% of all BTC are on addresses with exposed public keys[^EXPOSEDKEYS]
-- 100% of addresses can be hacked during transactions[^QUANTUMTX]
+- 100% of addresses can be hacked during transactions - and every address would have to submit a transaction in order to transition their BTC to a new quantum-proof address format[^QUANTUMTX]
 
 [^QUANTUMATTACK]: A powerful quantum computer can reverse Bitcoin public keys into private keys in a matter of minutes
 
 	**Reversing Bitcoin keys:**
 
-	If someone has your public key, they can also calculate your private key, which is unthinkable using even today’s most powerful classical computers. But in the days of quantum computers, the public-private keypair will be the weak link. Quantum computers have the potential to perform specific kinds of calculations significantly faster than any normal computer. Besides that, quantum computers can run algorithms that take fewer steps to get to an outcome, taking advantage of quantum phenomena like quantum entanglement and quantum superposition. So quantum computers can run these certain algorithms that could be used to make calculations that can crack cryptography used today. 
+	If someone knows your public key, they can also calculate your private key with a sufficiently powerful quantum computer — which is unthinkable using even today’s most powerful classical computers. In the era of quantum computers, the public-private ECDSA keypair will be the weak link. Quantum computers have the potential to perform specific kinds of calculations significantly faster than any classical computer. Additionally, quantum computers will be able to run algorithms that take fewer steps to produce an output, leveraging quantum phenomena like entanglement and superposition. 
 
-	Most blockchains use Elliptic Curve Digital Signature Algorithm (ECDSA) cryptography. Using a quantum computer, [Shor's algorithm](https://arxiv.org/abs/quant-ph/0301141) can be used to break ECDSA.  Meaning: they can derive the private key from the public key. So if they got your public key (and a quantum computer), then they got your private key and they can create a transaction and empty your wallet.
+	Most blockchains use Elliptic Curve Digital Signature Algorithm (ECDSA) for address security. Using a sufficiently powerful quantum computer, [Shor's algorithm](https://arxiv.org/abs/quant-ph/0301141) can be used to break ECDSA.  Specifically: an attacker will be able to an associated private key from a given public key. So any QC-armed adversary who knows your public key will be able to derive your private key and create a transaction which empties your wallet.
 	
-	Additionally, the paper [Quantum Attacks on Bitcoin and how to protect against them](https://arxiv.org/pdf/1710.10377.pdf) states "by our most optimistic estimates, as early as 2027 a quantum computer  could  exist  that  can  break  the  elliptic  curve  signature  scheme  in  less  than  10 minutes, the block time used in Bitcoin."
+	The paper [Quantum Attacks on Bitcoin and how to protect against them](https://arxiv.org/pdf/1710.10377.pdf) states that "by our most optimistic estimates, as early as 2027 a quantum computer  could  exist  that  can  break  the  elliptic  curve  signature  scheme  in  less  than  10 minutes, the block time used in Bitcoin."
 
 [^EXPOSEDKEYS]: Exposed public keys
 
@@ -26,4 +26,4 @@ category: 'statement'
 
 [^QUANTUMTX]: 100% of the addresses can be hacked during transactions:
 
-	"After a transaction has been broadcast to the network, but before it  is  placed  on  the  blockchain  it  is  at  risk  from  a  quantum  attack.   Ifthe secret key can be derived from the broadcast public key before the transaction is placed on the blockchain, then an attacker could use this secret key to broadcast a newtransaction from the same address to his own address.  If the attacker then ensures that this new transaction is placed on the blockchain first, then he can effectively steal all the bitcoin behind the original address." - [Quantum attacks on Bitcoin, and how to protect against them](https://arxiv.org/pdf/1710.10377.pdf)
+	"After a transaction has been broadcast to the network, but before it  is  placed  on  the  blockchain,  it  is  at  risk  from  a  quantum  attack. If the secret key can be derived from the broadcast public key before the transaction is placed on the blockchain, then an attacker could use this secret key to broadcast a new transaction from the same address to his own address. If the attacker then ensures that this new transaction is placed on the blockchain first, then he can effectively steal all the bitcoin behind the original address." - [Quantum attacks on Bitcoin, and how to protect against them](https://arxiv.org/pdf/1710.10377.pdf)
